@@ -13,7 +13,7 @@ sleep 1
 # avahi-daemon -D
 # sleep 1
 
-PLEX_HOME=/home/plex
+export PLEX_HOME=/home/plex
 
 mkdir -p ${PLEX_HOME}
 chown plex:plex ${PLEX_HOME}
@@ -22,6 +22,9 @@ export HOME=${PLEX_HOME}
 
 source /etc/sysconfig/PlexMediaServer
 
-# tail -F ${PLEX_HOME}/Library/Logs/Plex\ Media\ Server.log &
+tail -F ${PLEX_HOME}/Library/Application\ Support/Plex\ Media\ Server/Logs/Plex\ Media\ Server.log &
 
-/usr/lib/plexmediaserver/Plex\ Media\ Server 
+# it segfaults the first time, wtf
+/usr/lib/plexmediaserver/Plex\ Media\ Server
+
+/usr/lib/plexmediaserver/Plex\ Media\ Server

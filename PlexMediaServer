@@ -6,7 +6,7 @@ PLEX_USER=plex
 PLEX_MEDIA_SERVER_HOME=/usr/lib/plexmediaserver
 
 # Set home for Plex metadata
-PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR=/home/plex/Library/Application\ Support
+PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR=/config/Library/Application\ Support
 
 # the number of plugins that can run at the same time
 PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS=6

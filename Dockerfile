@@ -12,9 +12,9 @@ RUN su - -c "rpm -ivh /plexmediaserver-0.9.9.14.531-7eef8c6.x86_64.rpm"
 VOLUME /config
 VOLUME /data
 
-#ADD ./start.sh /start.sh
-#RUN chmod u+x  /start.sh
-
 EXPOSE 32400
 
-CMD ["service plexmediaserver run"]
+ADD ./start.sh /start.sh
+RUN chmod u+x  /start.sh
+
+#CMD ["systemctl start plexmediaserver"]

@@ -22,6 +22,6 @@ export HOME=${PLEX_HOME}
 
 source /etc/sysconfig/PlexMediaServer
 
-tail -F ${PLEX_HOME}/Library/Logs/Plex\ Media\ Server.log &
+# tail -F ${PLEX_HOME}/Library/Logs/Plex\ Media\ Server.log &
 
 /usr/lib/plexmediaserver/Plex\ Media\ Server 

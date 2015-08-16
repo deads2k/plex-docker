@@ -13,7 +13,7 @@ sleep 1
 # avahi-daemon -D
 # sleep 1
 
-export PLEX_HOME=/home/plex
+export PLEX_HOME=/config
 
 mkdir -p ${PLEX_HOME}
 chown plex:plex ${PLEX_HOME}

@@ -9,6 +9,8 @@ ADD ./plexmediaserver-0.9.9.14.531-7eef8c6.x86_64.rpm /plexmediaserver-0.9.9.14.
 
 RUN su - -c "rpm -ivh /plexmediaserver-0.9.9.14.531-7eef8c6.x86_64.rpm"
 
+ADD ./PlexMediaServer /etc/sysconfig/PlexMediaServer
+
 VOLUME /config
 VOLUME /data
 

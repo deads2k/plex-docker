@@ -23,5 +23,5 @@ export HOME=${PLEX_HOME}
 source /etc/sysconfig/PlexMediaServer
 /usr/lib/plexmediaserver/Plex\ Media\ Server &
 
-
-tail -f ${PLEX_HOME}/Library/Logs/Plex\ Media\ Server.log
+sleep 5
+tail -f ${PLEX_HOME}/Library/Logs/Plex\ Media\ Server.log | true
